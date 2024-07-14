@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Title</title>
+    </h:head>
+    <h:body>
+        
+        <h:form>
+            <h:outputLabel for="txtName">
+                <h:outputText value="Enter product name" /> 
+            </h:outputLabel>
+            <h:inputText id="txtName" value="#{obj.name}" />
+            
+            <br/>
+            
+             <h:outputLabel for="txtQty">
+                <h:outputText value="Enter product Qty" /> 
+            </h:outputLabel>
+            <h:inputText id="txtQty" value="#{obj.qty}" />
+            
+            <br/>
+            
+             <h:outputLabel for="txtPrice">
+                <h:outputText value="Enter product price" /> 
+            </h:outputLabel>
+            <h:inputText id="txtPrice" value="#{obj.price}" />
+            
+            <br/>
+            
+            <h:commandButton id="cmdInsert" value="Add Item" action="#{obj.add}"/>
+            
+            
+            
+            
+        </h:form>
+        
+    </h:body>
+</html>
+
